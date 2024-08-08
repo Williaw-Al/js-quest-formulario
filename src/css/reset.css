@@ -1,0 +1,11 @@
+html {
+    font-family: "Roboto", sans-serif;
+    font-size: 62.75%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+}

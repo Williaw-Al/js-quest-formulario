@@ -1,0 +1,16 @@
+@media (max-width:725px){
+    main{
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .alerta-mensagem{
+        margin: 30px 0;
+        text-align: center;
+    }
+
+    .formulario-ajuda{
+        width: 300px;
+        margin-bottom: 20px;
+    }
+}

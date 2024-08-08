@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário com Validação - Quest HTML|CSS|JS</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="./src/css/responsive.css">
+</head>
+
+<body>
+    <main>
+        <div class="alerta-mensagem">
+            <h2 class="titulo-alerta">
+                Ficou com dúvida? <br>
+                Nos mande uma Mensagem!
+            </h2>
+            <p class="texto-alerta">caso tenha ficado com qualquer dúvida, basta nos mandar uma mensagem e entraremos em
+                contato em menos de 24h.</p>
+        </div>
+        <form class="formulario-ajuda" action="" method="dialog" novalidate>
+            <input class="formulario-item" type="text" name="nome" id="nome" placeholder="Nome completo *">
+            <label for="nome"></label>
+
+            <input class="formulario-item" type="email" name="email" id="email" placeholder="Email *">
+            <label for="email"></label>
+
+            <input class="formulario-item" type="tel" name="telefone" id="telefone" placeholder="Telefone *">
+            <label for="telefone"></label>
+
+            <textarea class="formulario-item" name="mensagem" id="mensagem" placeholder="Mensagem *"></textarea>
+            <label for="mensagem"></label>
+
+            <p>*campos obrigatórios</p>
+
+            <input type="submit" value="Enviar" id="btn-enviar">
+        </form>
+    </main>
+
+    <script src="./src/js/index.js"></script>
+</body>
+
+</html>
