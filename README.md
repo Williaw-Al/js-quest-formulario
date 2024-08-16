@@ -1,6 +1,10 @@
 # Desafio HTML | CSS | JS - Quest formulário
 Desafio de HTML, CSS e JS intermediário, proposto no curso DevQuest do Dev em Dobro.
 
+## ⭐ Atualização ⭐
+- 16 / 08
+    - trocado a tag input button pela tag button no index.html
+
 ## 🛠 Tecnologias Utilizadas 🛠
 - HTML5
 - CSS3
