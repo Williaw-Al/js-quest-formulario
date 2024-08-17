@@ -76,6 +76,11 @@ label{
     font-weight: 400;
     font-size: 0.8rem;
     color: #F52E2E;
+    opacity: 0;
+}
+
+.formulario-ajuda .mostrar .texto-campo-obrigatorio{
+    opacity: 100;
 }
 
 .formulario-ajuda p{

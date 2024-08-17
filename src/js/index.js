@@ -1,27 +1,17 @@
 const botaoEnviar = document.querySelector("#btn-enviar")
 const inputsDoFormulario = document.querySelectorAll(".formulario-item")
 
-botaoEnviar.addEventListener("click", ()=>{
-    inputsDoFormulario.forEach(function (caixaDeInput){
-        caixaDeInput.classList.remove("campo-preenchido")
-        caixaDeInput.classList.remove("campo-obrigatorio")
-        const idNameDoInput = caixaDeInput.id
-        const labelDoInput = document.querySelector(`label[for = ${idNameDoInput}`)
+botaoEnviar.addEventListener("click", (e)=>{
+    e.preventDefault()
 
-        if(caixaDeInput.value != ""){
-            campoPreenchido(caixaDeInput, labelDoInput);
+    inputsDoFormulario.forEach(input => {
+        if (input.value){
+            input.classList.add("campo-preenchido")
+            input.nextElementSibling.classList.remove("mostrar")
         }else{
-            campoObrigatorio(caixaDeInput, labelDoInput);
+            input.classList.remove("campo-preenchido")
+            input.classList.add("campo-obrigatorio")
+            input.nextElementSibling.classList.add("mostrar")
         }
     })
 })
-
-function campoPreenchido(caixaDeInput, labelDoInput){
-    caixaDeInput.classList.add("campo-preenchido")
-    labelDoInput.innerHTML = ""
-}
-
-function campoObrigatorio(caixaDeInput, labelDoInput){
-    caixaDeInput.classList.add("campo-obrigatorio")
-    labelDoInput.innerHTML = `<p class="texto-campo-obrigatorio">campo obrigatório</p>`
-}

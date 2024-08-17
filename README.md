@@ -4,6 +4,9 @@ Desafio de HTML, CSS e JS intermediário, proposto no curso DevQuest do Dev em D
 ## ⭐ Atualização ⭐
 - 16 / 08
     - trocado a tag input button pela tag button no index.html
+    - index.js refatorado para deixar o código 10x mais simples e legível
+    - colocado o elemento parágrafo, de campo obrigatório, direto no html
+    - style.css atualizado para colocar a classe "mostrar" no campo obrigatório
 
 ## 🛠 Tecnologias Utilizadas 🛠
 - HTML5
